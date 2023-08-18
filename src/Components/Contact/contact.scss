@@ -1,0 +1,71 @@
+@import "../../var";
+
+.contact {
+    padding-top: 70px;
+    padding-bottom: 50px;
+
+    .row {
+        gap: 20px;
+    }
+
+    .left-col {
+        width: 50%;
+    }
+
+    .right-col {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .contact {
+        .left-col {
+            width: 100%;
+        }
+
+        .right-col {
+            width: 100%;
+        }
+    }
+}
+
+
+.contact-title {
+    font-size: 60px;
+}
+
+@media screen and (max-width: 576px) {
+    .contact-title {
+        font-size: 40px;
+    }
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    p {
+        font-weight: bold;
+    }
+
+    input,
+    textarea {
+        outline: none;
+        border: none;
+        color: $white-primary;
+        padding: 10px 20px;
+        background: $black-secondary;
+        border-radius: 5px;
+        resize: none;
+    }
+
+    textarea {
+        height: 150px;
+    }
+
+    .contact-button {
+        width: 200px;
+    }
+}

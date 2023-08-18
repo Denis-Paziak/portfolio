@@ -1,0 +1,112 @@
+@import "../../var";
+
+.about {
+    padding-top: 70px;
+    padding-bottom: 50px;
+
+    .row {
+        gap: 50px;
+    }
+}
+
+.about-title {
+    width: 50%;
+
+    h2 {
+        font-size: 60px;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .about-title {
+        width: 100%;
+
+        h2 {
+            font-size: 40px;
+        }
+    }
+}
+
+.about-content {
+    width: 50%;
+
+    .descr-top {
+        margin-bottom: 20px;
+    }
+
+    .descr {
+        color: $white-primary;
+        margin-bottom: 20px;
+    }
+
+    .item {
+        h2 {
+            font-size: 40px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .about-title {
+        width: 100%;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+
+    .row {
+        flex-wrap: wrap;
+    }
+}
+
+.my-skills {
+    margin-top: 50px;
+}
+
+.skills-container {
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+
+@media screen and (max-width: 576px) {
+    .skills-container {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .work-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+.skills-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+
+    background: $black-secondary;
+    padding: 20px 20px;
+    border-radius: 10px;
+
+    .icon {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .skills-item {
+        width: 90%;
+    }
+}

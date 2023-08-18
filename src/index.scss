@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;700&display=swap');
+@import "./var";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $black-primary;
+  color: $white-primary;
+  font-family: 'Bai Jamjuree', sans-serif;
+  cursor: none;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    cursor: auto;
+  }
+}
+
+.cursor {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 768px) {
+  .cursor {
+    display: none;
+  }
+}
+
+.cursor.active {
+  border-radius: 10%;
+  border: 1px solid black;
+  animation: animCursor 2s ease infinite;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes animCursor {
+  0% {
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(1.5) rotate(90deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1) rotate(360deg);
+  }
+}
+
+.cursor-border {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  border: 1px solid #767676;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: 0.1s ease;
+  z-index: 800;
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  .cursor-border {
+    display: none;
+  }
+}
+
+.cursor-border.active {
+  background: #767676;
+  transform: translate(-50%, -50%) scale(1.5);
+  opacity: 0.3;
+}
+
+.hover {
+  cursor: none;
+}
+
+@media screen and (max-width: 768px) {
+  .hover {
+    cursor: auto;
+  }
+}
+
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+}
+
+a {
+  color: $white-primary;
+  text-decoration: none;
+  transition: 0.6s;
+}
+
+a:hover {
+  color: $hover;
+}
+
+button {
+  border: 1px solid $white-primary;
+  color: $white-primary;
+  background: transparent;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+button:hover {
+  background: $white-primary;
+  color: $black-primary;
+}
+
+.gradient-button {
+  position: relative;
+  background: $gradient;
+  border: none;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.gradient-button:hover {
+  background: $gradient;
+}
+
+.gradient-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.6s;
+}
+
+.gradient-button:hover::before {
+  opacity: 1;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h2 {
+    font-size: 60px;
+  }
+
+  span {
+    background: $gradient;
+    color: transparent;
+    background-clip: text;
+  }
+
+  p {
+    width: 40%;
+    line-height: 20px;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+  .title {
+    flex-wrap: wrap;
+
+    p {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .title {
+    h2 {
+      font-size: 40px;
+    }
+  }
+}
+
+.row {
+  display: flex;
+}
+
+
+.gradient {
+  background: $gradient;
+  background-clip: text;
+  color: transparent;
+}
