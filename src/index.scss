@@ -11,14 +11,8 @@ body {
   background: $black-primary;
   color: $white-primary;
   font-family: 'Bai Jamjuree', sans-serif;
-  cursor: none;
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    cursor: auto;
-  }
-}
 
 .cursor {
   position: fixed;
@@ -73,29 +67,6 @@ body {
   z-index: 800;
   z-index: -1;
 }
-
-@media screen and (max-width: 768px) {
-  .cursor-border {
-    display: none;
-  }
-}
-
-.cursor-border.active {
-  background: #767676;
-  transform: translate(-50%, -50%) scale(1.5);
-  opacity: 0.3;
-}
-
-.hover {
-  cursor: none;
-}
-
-@media screen and (max-width: 768px) {
-  .hover {
-    cursor: auto;
-  }
-}
-
 
 .container {
   width: 80%;

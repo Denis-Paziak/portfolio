@@ -49,19 +49,19 @@
     .home {
 
         h1 {
-            text-align: start;
-            font-size: 40px;
+            font-size: 35px;
         }
 
         .container {
-            align-items: flex-start;
             padding-top: 150px;
             padding-bottom: 150px;
         }
 
         .buttons {
-            width: 100%;
             flex-direction: column;
+            align-items: center;
+            width: 100%;
+
 
             button {
                 width: 200px;

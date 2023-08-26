@@ -22,7 +22,7 @@ function About() {
                         <div className='row'>
                             <div className="item">
                                 <h3 className='gradient'>projects done</h3>
-                                <h2>20+</h2>
+                                <h2>40+</h2>
                             </div>
                             <div className="item">
                                 <h3 className='gradient'>experience</h3>
