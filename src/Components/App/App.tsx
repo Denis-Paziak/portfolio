@@ -44,7 +44,6 @@ function App() {
       <About />
       <Contact />
       <Footer />
-
     </div>
   );
 }

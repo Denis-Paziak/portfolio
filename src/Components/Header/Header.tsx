@@ -21,7 +21,7 @@ function Header({ statusMenu, setMenuStatus }: iProps) {
     return (
         <header className='header'>
             <div className="container">
-                <div className="logo">Denis Paziak</div>
+                <div className="logo">Denys Paziak</div>
                 <nav className={'nav ' + statusMenu}>
                     <a className='hover' href="#home">Home</a>
                     <a className='hover' href="#projects">Projects</a>
