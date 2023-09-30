@@ -14,10 +14,18 @@ interface iProjects {
 
 const data: iProjects[] = [
     {
+        id: 7,
+        name: "l21ua",
+        desc: "L21UA is a Ukrainian startup specializing in the use of data and artificial intelligence to optimize business processes and increase the efficiency of your company.",
+        link: "https://l21ua.tech/",
+        img: "img/l21ua.jpg",
+        skills: ["HTML", "CSS", "Wordpress", "JavaScript", "PHP"]
+    },
+    {
         id: 1,
         name: "Amazing-taiwan",
         desc: "Amazing Taiwan is travel guidance platform, helps hundreds of thousands of people each month, become better travelers.",
-        link: "https://denis-paziak.github.io/Amazing-taiwan/",
+        link: "https://denys-paziak.github.io/Amazing-taiwan/",
         img: "img/154966.jpg",
         skills: ["HTML", "SCSS", "JavaScript"]
     },
@@ -25,7 +33,7 @@ const data: iProjects[] = [
         id: 2,
         name: "Trafico",
         desc: "The occupational traffic permit is one of the most important things in the company when carrying out freight transport. In fact, it is a prerequisite for doing business traffic at all.",
-        link: "https://denis-paziak.github.io/Trafico/output/",
+        link: "https://denys-paziak.github.io/Trafico/output/",
         img: "img/6544989.jpg",
         skills: ["HTML", "SCSS", "JavaScript", "gulp"]
     },
