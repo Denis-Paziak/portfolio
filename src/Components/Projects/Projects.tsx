@@ -13,6 +13,14 @@ interface iProjects {
 
 
 const data: iProjects[] = [
+     {
+        id: 8,
+        name: "Alcoopt",
+        desc: "Is a modern online store specializing in offering a wide selection of alcoholic beverages from around the world. Our store was created with one goal in mind - to make the selection and purchase of alcohol an easy and enjoyable experience for our customers",
+        link: "www.alcoopt.store",
+        img: "img/47895768.jpg",
+        skills: ["HTML", "CSS", "Wordpress", "JavaScript", "PHP"]
+    },
     {
         id: 7,
         name: "l21ua",
